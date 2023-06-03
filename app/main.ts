@@ -89,6 +89,13 @@ gameClient.onGameUpdate((state: GameState): void => {
 		player: PlayerCoordinates
 	) {}
 
+
+
+
+
+
+
+
 	console.log("Game State received");
 	const possibleMoves = getMovesForPlayer(me);
 
@@ -109,8 +116,6 @@ gameClient.onGameUpdate((state: GameState): void => {
 		}
 	}
 
-	console.log({goal, possibleMoves});
-	console.log(Goal.Start)
 
 	gameClient.sendAction(prevDir, state.iteration);
 });
